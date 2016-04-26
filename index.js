@@ -8,18 +8,15 @@ var argv = require('minimist')(process.argv.slice(2))
 
 var stream = kinesis.stream({name: argv._[0], oldest: argv.o })
 
-var unpack = new Transform({
-  objectMode: true,
-  transform: function(record, _, next) {
-    next(null, record.Data.toString('ascii') + '\n')
-  }
-})
+var unpack = new Transform({ objectMode: true })
+unpack._transform = function(record, _, next) {
+  next(null, record.Data.toString('ascii') + '\n')
+}
 
-var pack = new Transform({
-  transform: function (line, _, next) {
-    next(null, line)
-  }
-})
+var pack = new Transform({})
+pack._transform = function (line, _, next) {
+  next(null, line)
+}
 
 if (process.stdin.isTTY) {
   stream.pipe(unpack).pipe(process.stdout)
