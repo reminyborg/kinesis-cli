@@ -14,6 +14,6 @@
   "dependencies": {
     "kinesis": "^1.2.2",
     "minimist": "^1.2.0",
-    "split": "^1.0.0"
+    "split2": "^2.0.1"
   }
 }
