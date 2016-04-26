@@ -4,8 +4,6 @@ var Transform = require('stream').Transform
 var kinesis = require('kinesis')
 
 var argv = require('minimist')(process.argv.slice(2))
-console.log(argv)
-
 
 var stream = kinesis.stream({name: argv._[0], oldest: argv.o })
 
