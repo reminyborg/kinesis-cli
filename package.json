@@ -1,0 +1,14 @@
+{
+  "name": "kinesis-cli",
+  "version": "0.0.0",
+  "description": "Cli for the kinesis node library",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Remi Nyborg <remi@nyborg.priv.no> (http://reminyborg.com)",
+  "license": "MIT",
+  "preferGlobal": true,
+  "bin": {
+    "kinesis": "index.js"
+  }
+}
