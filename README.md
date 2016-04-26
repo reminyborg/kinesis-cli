@@ -1,6 +1,6 @@
 #kinesis-cli
 
-A cli for the aws (kinesis node library)[https://github.com/mhart/kinesis]
+A cli for the aws [kinesis node library](https://github.com/mhart/kinesis)
 
 Currently only for piping to and from streams:
 
@@ -19,7 +19,7 @@ echo testing | kinesis stream-name
 
 to pipe from an stream
 ```
-kinesis stream-name
+kinesis stream-name > file
 ```
 
 ## Options
