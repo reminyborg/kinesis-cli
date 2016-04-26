@@ -10,5 +10,9 @@
   "preferGlobal": true,
   "bin": {
     "kinesis": "index.js"
+  },
+  "dependencies": {
+    "kinesis": "^1.2.2",
+    "minimist": "^1.2.0"
   }
 }
