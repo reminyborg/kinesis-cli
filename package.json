@@ -1,6 +1,6 @@
 {
   "name": "kinesis-cli",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Cli for the kinesis node library",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
