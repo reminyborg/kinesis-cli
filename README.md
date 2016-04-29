@@ -17,7 +17,7 @@ to pipe to a stream
 echo testing | kinesis stream-name
 ```
 
-to pipe from an stream
+to pipe from an stream *Warning this is currently very slow*
 ```
 kinesis stream-name > file
 ```
